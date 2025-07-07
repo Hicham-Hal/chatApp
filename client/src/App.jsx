@@ -14,7 +14,7 @@ const App = () => {
   console.log(authUser, users)
 
   return (
-    <div className="relative bg-[url('./src/assets/bgImage.svg')] bg-cover bg-center bg-no-repeat ">
+    <div className="relative bg-[url('/bgImage.svg')] bg-cover bg-center bg-no-repeat ">
       <Toaster />
       <Routes>
         <Route path="/" element={authUser ? <HomePage /> : <Navigate to={'/login'} />} />
